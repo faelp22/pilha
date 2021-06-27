@@ -1,7 +1,7 @@
-#include "pilha.h"
 #include <stdio.h>
+#include "pilha.h"
 /**
- * Autor = Isael Sousa <faelp22@hotmail.com>
+ * Autor = Isael Sousa <faelp22@gmail.com>
  * Date = 17/09/15 as 23:35
  */
 
@@ -19,7 +19,7 @@ void insere(Pilha *p, int v)
 		p->pilha[p->topo] = v;
 		return; // saio da funcao e retorno para main, assim eu evito um else; clear code :)
 	}
-	
+
 	vercheia(p);
 	return;
 }
@@ -31,7 +31,7 @@ void retira(Pilha *p)
 		vervazia(p);
 		return;
 	}
-	
+
 	p->pilha[p->topo] = 0;
 	p->topo--;
 	return;
@@ -44,7 +44,7 @@ void retiratodos(Pilha *p)
 		vervazia(p);
 		return;
 	}
-	
+
 	for(int i = 0; i <= TAMANHO -1; i++)
 	{
 		p->pilha[i] = 0;
@@ -105,4 +105,3 @@ void imprimetopo(Pilha *p)
 	printf("Topo %d \n", p->topo);
 	return;
 }
-

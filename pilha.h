@@ -1,3 +1,6 @@
+#ifndef PILHA_H
+#define	PILHA_H
+
 #define TAMANHO 10
 
 struct pilha {
@@ -24,3 +27,5 @@ void invertepilha(Pilha *p);
 void imprimepilha(Pilha *p);
 
 void imprimetopo(Pilha *p);
+
+#endif

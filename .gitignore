@@ -1,5 +1,7 @@
 nbproject/
 build/
-Makefile
 .dep.inc
 .directory
+.vscode
+pilha
+*.o
